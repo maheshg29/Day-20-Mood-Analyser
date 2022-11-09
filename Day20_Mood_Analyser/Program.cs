@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Day 20 Mood Analyser Problem");
-            MoodAnalyser moodAnalyser = new MoodAnalyser("I am Sad Mood");
+            MoodAnalyser moodAnalyser = new MoodAnalyser(null);
             string checkmood = moodAnalyser.AnalyseMood();
             Console.WriteLine(checkmood);
         }
