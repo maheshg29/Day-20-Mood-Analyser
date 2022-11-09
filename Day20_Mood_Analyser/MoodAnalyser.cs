@@ -9,6 +9,12 @@ namespace Day20_Mood_Analyser
    public class MoodAnalyser
     {
         public string message;
+        public MoodAnalyser()
+        {
+
+        }
+
+
         public MoodAnalyser(string message)
         {
             this.message = message;
