@@ -6,7 +6,20 @@ namespace TestProject1
     [TestClass]
     public class Tests
     {
-       
+        [TestMethod]
+        public void CheckNullMood()
+        {
+
+            //Arrange
+            MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+
+            //Act
+            string checknullmood = moodAnalyser.AnalyseMood();
+
+            //Assert
+            Assert.AreEqual(null, checknullmood);
+        }
+
         [TestMethod]
         public void CheckSadMood()
         {
